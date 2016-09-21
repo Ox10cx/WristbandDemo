@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ssdk_oks_classic_platfrom_cell_back_nor">#ffffffff</drawable>
+    <drawable name="ssdk_oks_classic_platfrom_cell_back_sel">#ffeeeeee</drawable>
+
+    <color name="ssdk_share_color_button_item_normal">#ffffffff</color>
+    <color name="ssdk_share_color_button_item_press">#ffd9d9d9</color>
+</resources>

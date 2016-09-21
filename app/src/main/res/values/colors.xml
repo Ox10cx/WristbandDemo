@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A47a5</color>
+    <color name="colorPrimaryDark">#2A47a5</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="homeColorPrimary">#1a9fbe</color>
+    <color name="homeColorPrimaryDark">#1a9fbe</color>
+    <color name="homeColorAccent">#FF4081</color>
+
+    <color name="grey">#ffebebeb</color>
+    <color name="lgray">#ff808080</color>
+    <color name="darkgrey">#ffc0c0c0</color>
+    <color name="gray2">#ffbfbfbf</color>
+    <color name="yellow">#ffffffce</color>
+    <color name="red">#ffff0000</color>
+    <color name="darkyellow">#ffffcc33</color>
+    <color name="gold">#ffb89766</color>
+    <color name="black">#dd000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="light_blue">#ff36bcf6</color>
+    <color name="gray">#88000000</color>
+    <color name="lightgray">#ffd3d3d3</color>
+    <color name="transparent">#00000000</color>
+    <color name="step_circle_color">#28f4cd</color>
+    <color name="sleep_circle_color">#FF608aff</color>
+    <color name="step_circle_color_old">#ff95dc3a</color>
+    <color name="sleep_circle_color_old">#ff95dc3a</color>
+    <color name="sleep_deep">#ff9087e2</color>
+    <color name="sleep_light">#ffd2aeff</color>
+    <color name="sleep_active">#ffbeccff</color>
+    <color name="step_line_color">#ff36bcf6</color>
+    <color name="setting_bg_color">#ff2A47a5</color>
+    <color name="setting_bg_color_old">#ff00bbc1</color>
+    <color name="setting_item_normal">#ffffffff</color>
+    <color name="setting_item_press">#ffd9d9d9</color>
+    <color name="deep_sleep">#ff6d3275</color>
+    <color name="light_sleep">#ff75609b</color>
+    <color name="awake">#ffe893b9</color>
+
+    <color name="guide_overlay">#e2353535</color>
+
+    <color name="headerBackgroundColor">#009ada</color>
+    <color name="headerTextColor">#FFFFFF</color>
+
+    <color name="green">#ff95dc3a</color>
+
+    <color name="text_gray_color">#ff808080</color>
+
+    <color name="wheel_color_solid_select">#ffffff</color>
+    <color name="wheel_color_solid_default">#ffffff</color>
+    <color name="wheel_color_divider">#ff808080</color>
+
+    <!--第三方登录开始-->
+    <color name="third_party_show_text">#999999</color>
+    <color name="third_party_green_button">#7ed73d</color>
+    <!--第三方登录结束-->
+</resources>

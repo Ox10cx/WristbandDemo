@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/setting_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="@color/setting_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView android:id="@+id/ivPersonageBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/icon_back"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/settings_personage" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/setting_bg_color"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.realsil.android.wristbanddemo.view.CircularImageView
+                android:id="@+id/ivPersonageHeadPortrait"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/head_portrait_default_man" />
+            <TextView
+                android:id="@+id/tvPersonalName"
+                android:textSize="14sp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/settings_personage_name"
+                android:layout_below="@id/ivPersonageHeadPortrait"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="20dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlPersonageGender"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_personage_gender" />
+                    <ImageView
+                        android:id="@+id/ivGenderRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:id="@+id/tvPersonalGenderValue"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/settings_personage_gender_female"
+                        android:textColor="@color/text_gray_color"
+                        android:layout_toLeftOf="@id/ivGenderRight"/>
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlPersonageAge"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_personage_age" />
+                    <ImageView
+                        android:id="@+id/ivAgeRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:id="@+id/tvPersonalAgeValue"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/age_value"
+                        android:textColor="@color/text_gray_color"
+                        android:layout_toLeftOf="@id/ivAgeRight"/>
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlPersonageHeight"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_personage_height" />
+                    <ImageView
+                        android:id="@+id/ivHeightRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:id="@+id/tvPersonalHeightValue"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/cm_value"
+                        android:textColor="@color/text_gray_color"
+                        android:layout_toLeftOf="@id/ivHeightRight"/>
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlPersonageWeight"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_personage_weight" />
+                    <ImageView
+                        android:id="@+id/ivWeightRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:id="@+id/tvPersonalWeightValue"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/kilogram_value"
+                        android:textColor="@color/text_gray_color"
+                        android:layout_toLeftOf="@id/ivWeightRight"/>
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlPersonageGoal"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_personage_step_total" />
+                    <ImageView
+                        android:id="@+id/ivGoalRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:id="@+id/tvPersonalGoalValue"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/step_value"
+                        android:textColor="@color/text_gray_color"
+                        android:layout_toLeftOf="@id/ivGoalRight"/>
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlSettingsLogOff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="40dp">
+
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentTop="true"/>
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_personage_log_off" />
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

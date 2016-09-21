@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/setting_bg_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="@color/setting_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/ivAlarmBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/icon_back"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/settings_mydevice_alarm_and_remind" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/gray2"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/rlClockOne"
+                android:background="@drawable/selector_other_setting_item">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvClockTimeOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="12:00"
+                        android:typeface="sans"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvClockDayFlagOne"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/text_gray_color"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <CheckBox
+                    android:id="@+id/cbClockOne"
+                    android:clickable="true"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View
+                android:background="@color/gray2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/rlClockTwo"
+                android:background="@drawable/selector_other_setting_item">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvClockTimeTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="12:00"
+                        android:typeface="sans"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvClockDayFlagTwo"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray_color"
+                        />
+                </LinearLayout>
+                <CheckBox
+                    android:id="@+id/cbClockTwo"
+                    android:clickable="true"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View
+                android:background="@color/gray2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/rlClockThree"
+                android:background="@drawable/selector_other_setting_item">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvClockTimeThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="12:00"
+                        android:typeface="sans"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvClockDayFlagThree"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray_color"
+                        />
+                </LinearLayout>
+                <CheckBox
+                    android:id="@+id/cbClockThree"
+                    android:clickable="true"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View
+                android:background="@color/gray2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/gray2"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="20dp" />
+            <RelativeLayout
+                android:id="@+id/rlCallRemind"
+                android:orientation="horizontal"
+                android:background="@color/setting_item_normal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:id="@+id/ivCallRemind"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_width="34dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/icon_call_remind"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/settings_calls_remind"
+                    android:layout_toRightOf="@id/ivCallRemind" />
+                <CheckBox
+                    android:id="@+id/cbCallRemind"
+                    android:clickable="true"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:layout_centerVertical="true" />
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlSmsRemind"
+                android:orientation="horizontal"
+                android:background="@color/setting_item_normal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:id="@+id/ivSmsRemind"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_width="34dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/icon_sms_remind"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/settings_sms_remind"
+                    android:layout_toRightOf="@id/ivSmsRemind" />
+                <CheckBox
+                    android:id="@+id/cbSmsRemind"
+                    android:clickable="true"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:layout_centerVertical="true" />
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlQQRemind"
+                android:orientation="horizontal"
+                android:background="@color/setting_item_normal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:id="@+id/ivQQRemind"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_width="34dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/icon_qq_remind"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/settings_qq_remind"
+                    android:layout_toRightOf="@id/ivQQRemind" />
+                <CheckBox
+                    android:id="@+id/cbQQRemind"
+                    android:clickable="true"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:layout_centerVertical="true" />
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlWechatRemind"
+                android:orientation="horizontal"
+                android:background="@color/setting_item_normal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:id="@+id/ivWechatRemind"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_width="34dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/icon_wechat_remind"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/settings_wechat_remind"
+                    android:layout_toRightOf="@id/ivWechatRemind" />
+                <CheckBox
+                    android:id="@+id/cbWechatRemind"
+                    android:clickable="true"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View
+                android:background="@color/gray2"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

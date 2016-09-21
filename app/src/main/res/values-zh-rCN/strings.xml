@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RtkBand</string>
+    <string name="hour_min"> %1$d小时 %2$d分</string>
+    <string name="total_hour_min">共 %1$d小时 %2$d分</string>
+    <string name="hour">小时</string>
+    <string name="minutes">分</string>
+    <string name="second">秒</string>
+    <string name="second_value">%1$d秒</string>
+    <string name="minutes_value">%1$d分</string>
+    <string name="hour_value">%1$d小时</string>
+    <string name="step_title">计步</string>
+    <string name="goal">目标</string>
+    <string name="step_value">%d 步</string>
+    <string name="age_value">%1$d 岁</string>
+    <string name="cm_value">%1$d 厘米</string>
+    <string name="kilogram_value">%1$d 公斤</string>
+    <string name="goal_percent">%1$.2f %%</string>
+    <string name="total_step_value">共 %d 步</string>
+    <string name="step_goal">目标/ %d 步</string>
+    <string name="distance">距离</string>
+    <string name="calorie">卡路里</string>
+    <string name="step_quality">质量</string>
+    <string name="distance_value">%1$.3f 公里</string>
+    <string name="calorie_value">%1$.3f 千卡</string>
+    <string name="detail_sport_value">距离：%1$.3f 公里，卡路里：%2$.3f 千卡，步数：%3$d 步</string>
+    <string name="detail_sleep_value">深睡：%1$d小时 %2$d分，浅睡：%3$d小时 %4$d分，清醒：%5$d 次</string>
+    <string name="detail_sleep_select_value">%1$s %2$s:%3$s-%4$s:%5$s</string>
+    <string name="step_quality_0">不合格</string>
+    <string name="step_quality_1">合格</string>
+    <string name="step_quality_2">良</string>
+    <string name="step_quality_3">优</string>
+    <string name="sleep_quality_0">很差</string>
+    <string name="sleep_quality_1">正常</string>
+    <string name="sleep_quality_2">很好</string>
+    <string name="sleep_title">睡眠</string>
+    <string name="deep_sleep">深睡</string>
+    <string name="light_sleep">浅睡</string>
+    <string name="sleep_latency">清醒</string>
+    <string name="times_value">%d 次</string>
+    <string name="sleep_quality">睡眠质量</string>
+    <string name="no_sleep_data">无数据</string>
+
+    <string name="details_header">详细</string>
+    <string name="day">日</string>
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="date_value">%1$d/%2$d/%3$d</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="sunday_full">星期天</string>
+    <string name="monday_full">星期一</string>
+    <string name="tuesday_full">星期二</string>
+    <string name="wednesday_full">星期三</string>
+    <string name="thursday_full">星期四</string>
+    <string name="friday_full">星期五</string>
+    <string name="saturday_full">星期六</string>
+    <string name="sunday_week">周日</string>
+    <string name="monday_week">周一</string>
+    <string name="tuesday_week">周二</string>
+    <string name="wednesday_week">周三</string>
+    <string name="thursday_week">周四</string>
+    <string name="friday_week">周五</string>
+    <string name="saturday_week">周六</string>
+    <string name="sunday">天</string>
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="rename">修改名称</string>
+    <string name="name_should_not_null">输入的名字不能为空！</string>
+    <string name="name_too_long">最多输入6个汉字或20个字母（1个汉字占3个字母长度）！</string>
+    <string name="sync_data_success">同步数据成功!</string>
+    <string name="exit_app_title">提示信息</string>
+    <string name="exit_app_text">确认退出？</string>
+    <string name="exit_ota_text">正在OTA升级，退出将可能导致手环损坏，确认退出？</string>
+    <string name="exit_ota_text_force">正在OTA升级，退出将可能导致手环损坏，请耐心等待。</string>
+    <string name="exit_without_save_alarm_setting">闹钟设置已改变，是否不保存闹钟设置？</string>
+    <string name="save_alarm_setting_text">闹钟设置已改变，是否保存闹钟设置？</string>
+    <string name="current_device_name">当前设备名称为：</string>
+    <string name="tomorrow_has_not_start_yet">明天还未开始！</string>
+    <string name="future_has_not_start_yet">未来还未开始！</string>
+
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="save">保存</string>
+
+    <string name="OK">OK</string>
+
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <!-- setting -->
+    <string name="settings">设置</string>
+    <string name="settings_personage">个人信息</string>
+    <string name="settings_search_device">搜索设备</string>
+    <string name="settings_my_device">我的设备</string>
+    <string name="settings_push_message">消息推送</string>
+    <string name="settings_wechat_interface">微信接入</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_quit">退出应用</string>
+    <string name="settings_calls_remind">来电提醒</string>
+    <string name="settings_sms_remind">短信提醒</string>
+    <string name="settings_qq_remind">QQ提醒</string>
+    <string name="settings_wechat_remind">微信提醒</string>
+    <string name="settings_mydevice_syncing_remind_setting">同步提醒设置...</string>
+    <string name="settings_push_message_notify_access">请使能当前应用的通知管理权限</string>
+    <string name="settings_push_message_notify_access_title">通知管理授权</string>
+    <string name="settings_personage_head_portrait">头像</string>
+    <string name="settings_personage_name">姓名</string>
+    <string name="settings_personage_rename">更改姓名</string>
+    <string name="settings_personage_set_avatar">设置头像</string>
+    <string name="settings_personage_make_sure_sdcard">请确认已经插入SD卡!</string>
+    <string name="settings_personage_set_avatar_album">相册</string>
+    <string name="settings_personage_set_avatar_photograph">拍照</string>
+    <string name="settings_personage_gender">性别</string>
+    <string name="settings_personage_gender_male">男性</string>
+    <string name="settings_personage_gender_female">女性</string>
+    <string name="settings_personage_age">年龄</string>
+    <string name="settings_personage_height">身高</string>
+    <string name="settings_personage_weight">体重</string>
+    <string name="settings_personage_log_off">退出登录</string>
+    <string name="settings_personage_log_off_title">提示信息</string>
+    <string name="settings_personage_log_off_text">确认退出登录？</string>
+    <string name="settings_personage_step_total">运动目标</string>
+    <string name="settings_mydevice_syncing_user_profile">同步用户信息...</string>
+    <string name="settings_bracelet">手环设置</string>
+    <string name="settings_mydevice_smart_unlock">智能解锁</string>
+    <string name="settings_mydevice_smart_lost">智能防丢</string>
+    <string name="settings_mydevice_sitting_remind_period">久坐提醒</string>
+    <string name="settings_mydevice_off_screen_time">灭屏时间</string>
+    <string name="settings_mydevice_find_bracelet">查找手环</string>
+    <string name="settings_mydevice_smart_alarm_clock">智能闹钟</string>
+    <string name="settings_mydevice_alarm_period_title">重复周期</string>
+    <string name="settings_mydevice_alarm_setting">闹钟设置</string>
+    <string name="settings_mydevice_alarm">闹钟</string>
+    <string name="settings_mydevice_alarm_repetition">重复</string>
+    <string name="settings_mydevice_alarm_and_remind">闹钟和提醒</string>
+    <string name="settings_mydevice_add_alarm">添加闹钟</string>
+    <string name="settings_mydevice_delete_alarm">删除闹钟</string>
+    <string name="settings_mydevice_save_alarm">保存闹钟</string>
+    <string name="settings_mydevice_alarm_not_change">闹钟设置未改变！</string>
+    <string name="settings_mydevice_syncing_alarm">同步闹钟列表...</string>
+    <string name="settings_mydevice_syncing_alarm_and_notify">同步闹钟列表和提醒设置...</string>
+    <string name="settings_mydevice_setting_alarm">设置闹钟列表...</string>
+    <string name="settings_mydevice_setting_alarm_success">设置闹钟列表成功！</string>
+    <string name="settings_mydevice_setting_alarm_failed">设置闹钟列表失败！</string>
+    <string name="settings_mydevice_setting_alarm_dayflag_onetime">只响一次</string>
+    <string name="settings_mydevice_setting_alarm_dayflag_every_day">每天</string>
+    <string name="settings_mydevice_reach_max_alarm">腕带最大支持%1$d个闹钟</string>
+    <string name="settings_mydevice_sos">紧急求救</string>
+    <string name="settings_mydevice_smart_unlock_change_password">修改锁屏密码</string>
+    <string name="settings_mydevice_rename_bracelet">修改手环名称</string>
+    <string name="settings_mydevice_lost_alarm_time">报警时间</string>
+    <string name="settings_mydevice_long_sit_alarm_time">久坐提醒时间</string>
+    <string name="settings_mydevice_long_sit_alarm_time_toast">久坐判断时间为60分钟！</string>
+    <string name="settings_mydevice_lost_alarm_music">报警铃声</string>
+    <string name="settings_personage_set_lost_alarm_music">设置报警铃声</string>
+    <string name="settings_personage_set_lost_alarm_music_clear">清空</string>
+    <string name="settings_personage_set_lost_alarm_music_replace">替换</string>
+    <string name="settings_about_update_app">更新应用</string>
+    <string name="settings_about_update_ble">更新固件</string>
+    <string name="settings_remove_bond">解除绑定</string>
+    <string name="settings_remove_bond_tip">解除绑定将会清空腕带的所有数据！该操作会断开与腕带的连接！</string>
+    <string name="settings_about_factory_data_reset">恢复出厂设置</string>
+    <string name="settings_about_factory_data_reset_tip">恢复出厂设置将会清空腕带和应用的所有数据！清空数据后必须重新连接来激活腕带！</string>
+    <string name="settings_about_help_centre">帮助中心</string>
+    <string name="settings_about_help">帮助</string>
+    <string name="settings_version_info">版本信息</string>
+    <string name="syncing_data">同步历史数据...</string>
+    <string name="syncing_data_success">同步历史数据成功</string>
+    <string name="syncing_data_fail">同步数据失败，请再试一次</string>
+    <string name="start_experience">开始体验</string>
+
+    <string name="progress_bar_timeout">等待操作超时，可能出现问题，断开当前连接！</string>
+
+    <!-- connect -->
+    <string name="connect_with_device_name">正在与%1$s建立连接, 请稍等...</string>
+    <string name="connect_success">已连接</string>
+    <string name="connect_failed">连接失败</string>
+    <string name="connect_disconnect">已断开连接</string>
+    <string name="disconnect_title">断线提醒</string>
+
+    <string name="remove_bond">解绑</string>
+
+    <string name="bond_success">配对成功</string>
+    <string name="bond_failure">配对失败</string>
+
+    <string name="please_connect_band">请连接手环</string>
+
+    <string name="connect_band">正在登录手环, 请稍等...</string>
+    <string name="connect_band_success">登录成功，现在可以正常使用</string>
+
+    <string name="something_error">出现异常</string>
+
+    <string name="something_error_in_notification_service">通知接收服务启动失败，请重新启动！</string>
+
+
+    <!-- pull scan -->
+    <string name="pull_to_scan">下拉扫描设备</string>
+    <string name="connected_unpair_first">已连接一个手环，如果需要连接其他手环，请先解除当前配对！</string>
+    <string name="bonded_unpair_first">已配对一个手环，如果需要配对其他手环，请先解除当前配对！</string>
+    <string name="connected">已连接，可以正常使用！</string>
+    <string name="disconnect_reconnect_it">已断开连接，正在尝试重连...</string>
+    <string name="release_to_scan">松开扫描</string>
+    <string name="scanning">扫描中</string>
+    <string name="connected_with_toast">已连接，可以正常使用！\n左滑可以解绑，点击可以固件升级。</string>
+    <string name="connected_with_toast_local">已连接，可以正常使用！\n左滑可以解绑。</string>
+    <string name="disconnect_reconnect_it_with_toast">已断开连接，正在尝试重连...\n左滑可以解绑，点击可以尝试连接。</string>
+
+
+    <!-- pull refresh -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="pull_minutes">分钟</string>
+    <string name="pull_hour">小时</string>
+    <string name="pull_day">天</string>
+    <string name="pull_month">个月</string>
+    <string name="pull_year">年</string>
+
+    <string name="scanner_title">选择设备:</string>
+    <string name="scanner_empty">未找到设备</string>
+    <string name="scanner_action_scan">扫描</string>
+    <string name="scanner_action_cancel">取消</string>
+    <string name="scanner_subtitle_bonded">已绑定设备:</string>
+    <string name="scanner_subtitle_not_bonded">可用设备:</string>
+    <string name="unknown_device">未知设备</string>
+
+    <string name="bluetooth_not_support_bluetooth">该设备不支持蓝牙。</string>
+    <string name="bluetooth_not_support_ble">该设备不支持BLE。</string>
+    <string name="bluetooth_enabled">蓝牙已启动！</string>
+    <string name="bluetooth_not_enabled">蓝牙未启动！</string>
+
+    <string name="guide_home_operate">同步数据，在这里下拉刷新！</string>
+    <string name="guide_home_setting">单击设置，连接手环！</string>
+    <string name="guide_setting_my_device">单击“我的设备”，连接手环！</string>
+
+    <string name="file_browser_not_support">没找到文件浏览器，请下载一个。</string>
+
+    <!-- Device Info -->
+    <string name="device_info_device_name_label">设备名称：</string>
+    <string name="device_info_device_address_label">设备地址：</string>
+    <string name="device_info_app_version_label">APP版本号：</string>
+    <string name="device_info_patch_version_label">Patch版本号：</string>
+    <string name="device_info_title">设备信息</string>
+    <string name="device_info_new_app_version_label">新App版本号：</string>
+    <string name="device_info_new_patch_version_label">新Patch版本号：</string>
+    <string name="device_info_current_app_version_label">当前App版本号：</string>
+    <string name="device_info_current_patch_version_label">当前Patch版本号：</string>
+
+    <string name="device_info_have_new_version">存在新的固件版本，立即升级</string>
+    <string name="device_info_is_new_version">已是最新版本</string>
+
+    <!-- OTA -->
+    <string name="dfu_confirmation_dialog_title">应用升级</string>
+    <string name="dfu_upload_dialog_cancel_message">确认取消升级？</string>
+    <string name="dfu_feature_title">DFU</string>
+    <string name="dfu_settings_title">DFU设置</string>
+    <string name="dfu_feature_title_long">设备固件升级</string>
+    <string name="dfu_section_application_header">文件/版本信息</string>
+    <string name="dfu_file_name_label">文件名称：</string>
+    <string name="dfu_file_type_label">文件类型：</string>
+    <string name="dfu_file_size_label">文件大小：</string>
+    <string name="dfu_file_old_fw_version_label">对端APP版本号：</string>
+    <string name="dfu_file_old_patch_version_label">对端Patch版本号：</string>
+    <string name="dfu_file_new_fw_version_label">待升级文件版本号：</string>
+    <string name="dfu_file_status_label">文件状态：</string>
+    <string name="dfu_file_size_text">%d bytes</string>
+    <string name="dfu_file_status_ok">OK</string>
+    <string name="dfu_file_status_no_file">文件未载入</string>
+    <string name="dfu_file_status_invalid">无效文件</string>
+    <string name="dfu_file_status_invalid_message">请选择有效的升级bin文件</string>
+    <string name="dfu_alert_no_filebrowser_title">文件浏览器未找到</string>
+    <string name="dfu_section_dfu_header">设备固件升级</string>
+    <string name="dfu_status_completed">完成</string>
+    <string name="dfu_status_abored">中止</string>
+    <string name="dfu_status_error">升级失败</string>
+    <string name="dfu_status_starting_msg">初始化&#8230;</string>
+    <string name="dfu_status_uploading_msg">发送升级文件给：%s&#8230;</string>
+    <string name="dfu_status_validating_msg">校验升级文件&#8230;</string>
+    <string name="dfu_status_completed_msg">固件升级成功！</string>
+    <string name="dfu_status_aborted_msg">固件升级已取消</string>
+    <string name="dfu_status_disconnecting_msg">与%s断开连接&#8230;</string>
+    <string name="dfu_status_error_msg">升级失败！失败代码：%d</string>
+    <string name="dfu_start_ota_success_msg">开始OTA升级</string>
+    <string name="dfu_start_ota_fail_msg">初始化DFU失败</string>
+    <string name="dfu_action_select_file">选择升级文件</string>
+    <string name="dfu_action_upload">启动升级</string>
+    <string name="dfu_help_title">帮助</string>
+    <string name="dfu_help_message">
+        设备在选择升级bin文件前必须安装一个文件浏览器。
+        \n\n可以通过各大应用市场下载，如ES文件浏览器，通过这些应用可以允许你从内存中选择一个需要进行升级的bin文件。
+        \n\n当有多个文件浏览器时，可能需要你选择其中一个来进行文件选择。
+    </string>
+    <string name="dfu_not_ready">OTA升级还没准备好，请尝试重新启动OTA！</string>
+    <string name="dfu_battery_not_enough">腕带当前电量为：%1$d%%，无法启动OTA升级，请确保电量高于60%%！</string>
+    <string name="dfu_auto_start_title">存在新的固件，是否进行升级？</string>
+    <string name="dfu_status_initialing_app_msg">App升级初始化&#8230;</string>
+    <string name="dfu_status_initialing_patch_msg">Patch升级初始化&#8230;</string>
+    <string name="dfu_status_starting_app_msg">正在升级App&#8230;</string>
+    <string name="dfu_status_starting_patch_msg">正在升级Patch&#8230;</string>
+
+    <!-- About -->
+    <string name="about_title">关于</string>
+    <string name="about_text">
+        RtkBand是Realsil公司用于支持腕带功能的Bee设备的演示APK。</string>
+    <string name="about_version">\n\nAPK版本: %s</string>
+    <string name="about_copyright_text">
+        \nCopyright &#169; 2016 Realsil Corporation. All rights reserved.
+    </string>
+
+    <!-- Login -->
+    <string name="login_title">登陆</string>
+    <string name="login_user_name">用户名/手机号</string>
+    <string name="login_user_psw">密码</string>
+    <string name="login_user_name_should_not_null">用户名不能为空</string>
+    <string name="login_psw_should_not_null">密码不能为空</string>
+    <string name="login_psw_input_error">密码输入错误</string>
+    <string name="login_logining">正在登陆...</string>
+    <string name="login_success">登陆成功</string>
+    <string name="login_error_info">登陆失败：%1$s</string>
+
+    <!--第三方登录开始-->
+    <string name="third_party_wx">微信</string>
+    <string name="third_party_qq">QQ</string>
+    <string name="third_party_weibo">微博</string>
+    <string name="third_party_other_login_type">其他登录方式</string>
+    <!--第三方登录结束-->
+
+    <!--分享开始-->
+    <string name="share_cancel">取消</string>
+    <string name="share_wx">微信</string>
+    <string name="share_wx_timeline">朋友圈</string>
+    <string name="share_qq">QQ</string>
+    <string name="share_sina">新浪微博</string>
+    <string name="share_title">RtkBand</string>
+    <string name="share_content">开始运动，享受生活！</string>
+    <!--分享结束-->
+</resources>

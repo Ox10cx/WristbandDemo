@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@color/setting_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivLoginBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_back"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/etLoginUserName"
+            style="@style/register_edittext"
+
+            android:hint="@string/login_user_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_delete"
+            android:id="@+id/ivClearLoginUserName"
+            android:background="#ffffff"
+            android:visibility="invisible"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+    </LinearLayout>
+    <View style="@style/line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        <EditText
+            android:id="@+id/etLoginPsw"
+            style="@style/register_edittext"
+            android:hint="@string/login_user_psw"
+            android:inputType="textPassword"
+            android:layout_weight="1"
+            android:layout_width="0dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_delete"
+            android:id="@+id/ivClearLoginPsw"
+            android:visibility="invisible"
+            android:background="#ffffff"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+    </LinearLayout>
+    <View style="@style/line" />
+
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_round_selector"
+        android:id="@+id/tvLogin"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/login_title" />
+
+
+    <include layout="@layout/activity_third_party_login"></include>
+
+</LinearLayout>

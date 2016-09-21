@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.realsil.android.wristbanddemo.utility.RefreshableLinearLayoutView
+        android:id="@+id/refreshable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.realsil.android.wristbanddemo.utility.DisableChildSlideLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5">
+                    <ImageView
+                        android:clickable="false"
+                        android:layout_gravity="center"
+                        android:id="@+id/ivStepCircle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/btn_circle_day_selector" />
+                    <com.realsil.android.wristbanddemo.utility.CircleProcessBar
+                        android:layout_gravity="center"
+                        android:id="@+id/cpbStep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"/>
+                    <TextView
+                        android:textSize="40sp"
+                        android:textColor="@color/black"
+                        android:id="@+id/tvHomeCurrentStep"
+                        android:paddingBottom="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_centerInParent="true" />
+                    <TextView
+                        android:textColor="@color/black"
+                        android:id="@+id/tvHomeGoal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step_goal"
+                        android:layout_below="@id/tvHomeCurrentStep"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="60dp"
+                android:layout_weight="5.0"
+                android:layout_marginBottom="20dp">
+                <include
+                    layout="@layout/pulldown_sync_step_adapter">
+
+                </include>
+            </LinearLayout>
+        </com.realsil.android.wristbanddemo.utility.DisableChildSlideLinearLayout>
+    </com.realsil.android.wristbanddemo.utility.RefreshableLinearLayoutView>
+
+</LinearLayout>

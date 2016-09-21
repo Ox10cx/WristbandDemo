@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/setting_bg_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="@color/setting_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/ivOTABack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/icon_back"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/settings_about_update_ble" />
+        </RelativeLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Application section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Widget.ListTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dfu_section_application_header"
+                    android:layout_marginBottom="15dp"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:text="@string/dfu_file_name_label"/>
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:id="@+id/tvFileName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:layout_marginLeft="5dp"
+                            android:freezesText="true"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:text="@string/dfu_file_size_label"/>
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:id="@+id/tvFileSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:layout_marginLeft="5dp"
+                            android:freezesText="true"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:text="@string/dfu_file_new_fw_version_label"/>
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:id="@+id/tvFileVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:layout_marginLeft="5dp"
+                            android:freezesText="true"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:text="@string/dfu_file_old_fw_version_label"/>
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:id="@+id/tvTargetAppVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:layout_marginLeft="5dp"
+                            android:freezesText="true"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:text="@string/dfu_file_old_patch_version_label"/>
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:id="@+id/tvTargetPatchVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:layout_marginLeft="5dp"
+                            android:freezesText="true"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:text="@string/dfu_file_status_label"/>
+
+                        <TextView
+                            android:id="@+id/tvFileStatus"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray_color"
+                            android:layout_marginLeft="5dp"
+                            android:freezesText="true"
+                            android:text="@string/dfu_file_status_no_file"/>
+                    </TableRow>
+                </TableLayout>
+
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSelectFile"
+                android:orientation="horizontal"
+                android:background="@drawable/button_round_selector"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="40dp">
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvSelectFile"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/dfu_action_select_file" />
+            </RelativeLayout>
+
+            <!-- DFU section -->
+
+            <LinearLayout
+                android:id="@+id/dfu_pane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Widget.ListTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dfu_section_dfu_header" />
+
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginBottom="15dp" />
+                <TextView
+                    android:id="@+id/tvUploadingStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray_color"
+                    android:text="@string/dfu_status_starting_msg"
+                    android:visibility="invisible"/>
+
+                <ProgressBar
+                    android:id="@+id/pbUploadProgress"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/tvProgress"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray_color"
+                    android:layout_marginBottom="15dp"
+                    android:text="0%"
+                    android:visibility="invisible"
+                    android:gravity="center" />
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlUpload"
+                android:orientation="horizontal"
+                android:background="@drawable/button_round_selector"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="40dp">
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvUpload"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/dfu_action_upload" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

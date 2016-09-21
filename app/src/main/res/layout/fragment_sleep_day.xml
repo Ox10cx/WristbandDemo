@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvDayDetailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/today" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@mipmap/day_details_bg_sleep">
+
+                <com.realsil.android.wristbanddemo.view.SleepChartView
+                    android:id="@+id/lcvLineChart"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                </com.realsil.android.wristbanddemo.view.SleepChartView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/day_ic_sleep" />
+                <TextView
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tvDetailTotalSleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hour_min" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1.0">
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="78dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/day_icon_deep_sleep" />
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp">
+                                <TextView
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center_horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/deep_sleep" />
+                                <TextView
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/tvDetailTotalDeep"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/hour_min" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1.0">
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="78dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/day_icon_light_sleep" />
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp">
+                                <TextView
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center_horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/light_sleep" />
+                                <TextView
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/tvDetailTotalLight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/hour_min" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_weight="1.0">
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="78dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/day_icon_sleep_latency" />
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp">
+                                <TextView
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center_horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sleep_latency" />
+                                <TextView
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/tvDetailAwake"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/times_value" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0">
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/llDetailQuality"
+                            android:visibility="invisible">
+                            <ImageView
+                                android:id="@+id/ivDetailQuality"
+                                android:layout_width="78dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/day_icon_no_data" />
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp">
+                                <TextView
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center_horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sleep_quality" />
+                                <TextView
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/tvDetailQuality"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/no_sleep_data" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

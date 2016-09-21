@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+
+def appName() {
+    return "RtkBand"
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.realsil.android.wristbanddemo"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 17
+        versionName "1.2.2"
+    }
+    buildTypes {
+        release {
+            buildConfigField "boolean", "APP_WORK_TYPE", 'true'
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            buildConfigField "boolean", "APP_WORK_TYPE", 'false'
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        local {
+            buildConfigField "boolean", "APP_WORK_TYPE", 'false'
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+        }
+    }
+
+    android {
+        sourceSets {
+            main.jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    // 根据渠道名称和release或debug类型，修改生成的apk名字
+    applicationVariants.all{ variant->
+        variant.outputs.each { output->
+            def oldFile = output.outputFile
+            def newName = '';
+            if(variant.buildType.name.equals('release')){
+                def productFlavorsName = variant.productFlavors[0].name;
+                def releaseApkName = appName() + '-' + defaultConfig.versionName + '-' + productFlavorsName + '-sign-' + defaultConfig.versionCode + '.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+            if(variant.buildType.name.equals('debug')){
+                def productFlavorsName = variant.productFlavors[0].name;
+                def releaseApkName = appName() + '-' + defaultConfig.versionName + '-' + productFlavorsName + '-debug-' + defaultConfig.versionCode + '.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+
+            if(variant.buildType.name.equals('local')){
+                def productFlavorsName = variant.productFlavors[0].name;
+                def releaseApkName = appName() + '-' + defaultConfig.versionName + '-' + productFlavorsName + '-local-' + defaultConfig.versionCode + '.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+        }
+    }
+
+    // 多渠道定义
+    productFlavors {
+        realsil {
+            manifestPlaceholders = [CHANNEL_VALUE: "realsil"]
+        }
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile files('libs/greendao-2.1.0.jar')
+    compile files('libs/hellocharts-library-1.5.8.jar')
+    compile files('libs/universal-image-loader-1.9.3-SNAPSHOT.jar')
+    //第三方分享登陆所需的包
+    compile files('libs/ShareSdk/ShareSDK-Core-2.7.2.jar')
+    compile files('libs/ShareSdk/MobCommons-2016.0426.1819.jar')
+    compile files('libs/ShareSdk/MobTools-2016.0426.1819.jar')
+    compile files('libs/ShareSdk/ShareSDK-QQ-2.7.2.jar')
+    compile files('libs/ShareSdk/ShareSDK-Wechat-2.7.2.jar')
+    compile files('libs/ShareSdk/ShareSDK-Wechat-Core-2.7.2.jar')
+    compile files('libs/ShareSdk/ShareSDK-SinaWeibo-2.7.2.jar')
+    compile files('libs/ShareSdk/ShareSDK-QZone-2.7.2.jar')
+    compile files('libs/ShareSdk/ShareSDK-Wechat-Moments-2.7.2.jar')
+
+    compile files('libs/BmobSDK_3.5.1_20160719.jar')
+}

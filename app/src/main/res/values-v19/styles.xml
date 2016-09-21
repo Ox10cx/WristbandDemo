@@ -1,0 +1,40 @@
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!--
+        <item name="android:windowTranslucentNavigation">true</item>
+        -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="AppHomeTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/homeColorPrimary</item>
+        <item name="colorPrimaryDark">@color/homeColorPrimaryDark</item>
+        <item name="colorAccent">@color/homeColorAccent</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="Widget" />
+    <style name="Widget.ScannerSubtitle">
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.ListTitle">
+        <item name="android:background">@color/setting_bg_color</item>
+        <item name="android:textColor">@color/headerTextColor</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

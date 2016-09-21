@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <android.support.v4.view.ViewPager
+        android:layout_gravity="center"
+        android:id="@+id/vpMain"
+        android:background="@color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:flipInterval="30" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_centerInParent="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:id="@+id/btnStart"
+            android:visibility="gone"
+            android:background="@drawable/button_text_selector"
+            android:text="@string/start_experience"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llIndicator"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/ivIndicatorFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_indicator_focused"
+            android:layout_weight="1.0" />
+        <ImageView
+            android:id="@+id/ivIndicatorSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_indicator"
+            android:layout_weight="1.0" />
+        <ImageView
+            android:id="@+id/ivIndicatorThird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_indicator"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/setting_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/grey">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:background="@color/setting_bg_color"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/ivSettingBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/icon_back"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/settings" />
+                <ImageView
+                    android:id="@+id/ivSettingsBleBattery"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_battery_bar"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="20dp" />
+                <RelativeLayout
+                    android:id="@+id/rlPersonage"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:id="@+id/ivPersonage"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/icon_personage_man"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_personage"
+                        android:layout_toRightOf="@id/ivPersonage" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlMyDevice"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:id="@+id/ivMyDevices"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/icon_mydevice"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_my_device"
+                        android:layout_toRightOf="@id/ivMyDevices" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="20dp" />
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/rlSmartLost"
+                    android:background="@color/setting_item_normal"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:id="@+id/ivSmartLostIcon"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/icon_anti_lost"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_mydevice_smart_lost"
+                        android:layout_toRightOf="@id/ivSmartLostIcon" />
+                    <CheckBox
+                        android:id="@+id/cbSmartLostSwitch"
+                        android:background="@drawable/checkbox_selector"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:button="@null"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/rlLongSit"
+                    android:background="@color/setting_item_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:id="@+id/ivLongSitIcon"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/icon_remind_period"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_mydevice_sitting_remind_period"
+                        android:layout_toRightOf="@id/ivLongSitIcon" />
+                    <CheckBox
+                        android:id="@+id/cbLongSitSwitch"
+                        android:background="@drawable/checkbox_selector"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:button="@null"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/rlFindBand"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:id="@+id/ivFindBandIcon"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/icon_find_band"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_mydevice_find_bracelet"
+                        android:layout_toRightOf="@id/ivFindBandIcon" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/rlSmartAlarm"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:id="@+id/ivSmartAlarmIcon"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/icon_alarm"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_mydevice_alarm_and_remind"
+                        android:layout_toRightOf="@id/ivSmartAlarmIcon" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/rlRenameBand"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:id="@+id/ivRenameBandIcon"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/icon_rename_band"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_mydevice_rename_bracelet"
+                        android:layout_toRightOf="@id/ivRenameBandIcon" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlUpdateBle"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentTop="true" />
+                    <ImageView
+                        android:id="@+id/ivUpdateBle"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/icon_update_ble"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_about_update_ble"
+                        android:layout_toRightOf="@id/ivUpdateBle" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="20dp" />
+                <RelativeLayout
+                    android:id="@+id/rlReset"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:id="@+id/ivReset"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/icon_factory_data_reset"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_about_factory_data_reset"
+                        android:layout_toRightOf="@id/ivReset" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlAbout"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:id="@+id/ivAbout"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/icon_about"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/settings_about"
+                        android:layout_toRightOf="@id/ivAbout" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/settings_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <View
+                        android:background="@color/gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="20dp" />
+                <RelativeLayout
+                    android:id="@+id/rlSettingsQuit"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_other_setting_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_quit" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/gray2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

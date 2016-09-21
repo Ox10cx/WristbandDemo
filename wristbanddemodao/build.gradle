@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/freemarker-2.3.23.jar')
+    compile files('libs/greendao-generator-2.1.0.jar')
+}

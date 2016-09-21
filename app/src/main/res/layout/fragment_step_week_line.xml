@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvWeekDetailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/today" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@mipmap/day_details_bg_sport">
+
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/lcvLineChart"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    >
+                </lecho.lib.hellocharts.view.LineChartView>
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/lcvLineChart">
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/lightgray"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sunday"
+                        android:layout_weight="1.0" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/lightgray"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/monday"
+                        android:layout_weight="1.0" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/lightgray"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tuesday"
+                        android:layout_weight="1.0" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/lightgray"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wednesday"
+                        android:layout_weight="1.0" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/lightgray"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thursday"
+                        android:layout_weight="1.0" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/lightgray"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friday"
+                        android:layout_weight="1.0" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/lightgray"
+                        android:gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/saturday"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/day_ic_sport" />
+                <TextView
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tvDetailTotalStep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

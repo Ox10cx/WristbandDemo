@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.realsil.android.wristbanddemo.view.CycleWheelView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:layout_centerInParent="true"
+            android:id="@+id/cwvWristSetValue"/>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/gray2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/rlWristValueCancel"
+            android:orientation="horizontal"
+            android:background="@drawable/selector_other_setting_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel" />
+
+        </RelativeLayout>
+        <View
+            android:background="@color/gray2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:id="@+id/rlWristValueSure"
+            android:orientation="horizontal"
+            android:background="@drawable/selector_other_setting_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sure" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/gray2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

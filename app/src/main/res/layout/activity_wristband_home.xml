@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/bg_day"
+    android:fitsSystemWindows="true"
+    android:id="@+id/rlHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/rlCalendar"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/ivHomeSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_settings_day_selector"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:id="@+id/tvHomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/step_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <ImageView
+            android:id="@+id/ivlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginRight="40dp"
+            android:src="@mipmap/share"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/ivSettingsBleBattery"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_battery_bar"
+          />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/line_vertical_margin"
+        android:layout_marginBottom="@dimen/line_vertical_margin"
+        android:layout_below="@id/rlCalendar"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/llIndicator"
+        android:layout_width="39.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/ivIndicatorStep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_indicator_focused"
+            android:layout_weight="1.0" />
+        <ImageView
+            android:id="@+id/ivIndicatorSleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/page_indicator"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_gravity="center"
+        android:id="@+id/vpMain"
+        android:background="@color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:flipInterval="30"
+        android:layout_below="@id/llIndicator" />
+</RelativeLayout>
