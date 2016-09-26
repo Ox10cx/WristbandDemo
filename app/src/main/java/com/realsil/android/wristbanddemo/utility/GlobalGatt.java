@@ -209,6 +209,7 @@ public class GlobalGatt {
     public void closeBluetoothGatt(final String addr) {
         if(D) Log.d(TAG, "closeBluetoothGatt, addr: " + addr + ", mBluetoothGatts.get(addr): " +  mBluetoothGatts.get(addr));
         if (mBluetoothGatts.get(addr) != null) {
+            //gatt close
             mBluetoothGatts.get(addr).close();
             mBluetoothGatts.remove(addr);
             mCallbacks.remove(addr);
@@ -247,6 +248,7 @@ public class GlobalGatt {
     public void disconnectGatt(final String addr) {
         if(D) Log.d(TAG, "disconnect()");
         if((mBluetoothGatts.get(addr) != null) && (isConnected(addr))) {
+            //gatt disconnect
             mBluetoothGatts.get(addr).disconnect();
             // wait 500ms for disconnect, here also can use sync method
             try {

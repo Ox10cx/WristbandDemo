@@ -248,6 +248,7 @@ public class WristbandHomeFragmentSport extends Fragment {
         new Thread(new Runnable() {
             @Override
             public void run() {
+                //请求运动数据
                 mWristbandManager.SendDataRequest();
             }
         }).start();
@@ -258,7 +259,6 @@ public class WristbandHomeFragmentSport extends Fragment {
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-
                 initialUI();
             }
         });
@@ -290,6 +290,7 @@ public class WristbandHomeFragmentSport extends Fragment {
                 cancelSync();
             }
         }
+
 /*
         @Override
         public void onLoginStateChange(final int state) {

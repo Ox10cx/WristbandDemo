@@ -468,6 +468,11 @@ public class WristbandOtaActivity extends SwipeBackActivity implements LoaderMan
             e.printStackTrace();
         }*/
         if(D) Log.e(TAG, "Start OTA, address is: " + mWristbandManager.getBluetoothAddress());
+        if(mtvFileVersion.getText().toString().trim().equals(mtvTargetAppVersion.getText().toString().trim())
+                ||mtvFileVersion.getText().toString().trim().equals(mtvTargetPatchVersion.getText().toString().trim())){
+            showToast("当前固件已经处于最新版");
+            return;
+        }
         if(dfu.start(mWristbandManager.getBluetoothAddress(), mFilePath)){
             showToast(R.string.dfu_start_ota_success_msg);
             if(D) Log.d(TAG, "true");
@@ -477,6 +482,7 @@ public class WristbandOtaActivity extends SwipeBackActivity implements LoaderMan
             allowDrag(!isInOta);
 
             showProgressBar();
+            //来回移动
             mProgressBar.setIndeterminate(true);
             mrlUpload.setEnabled(false);
             mrlSelectFile.setEnabled(false);
@@ -687,6 +693,7 @@ public class WristbandOtaActivity extends SwipeBackActivity implements LoaderMan
             // TODO Auto-generated method stub
             if(D) Log.d(TAG, "MSG No " + msg.what);
             switch (msg.what) {
+                //对端APP版本号 对端Patch版本号
                 case OTA_GET_TARGET_VERSION_INFO_SUCCESS:
                     mtvTargetAppVersion.setText(String.valueOf(msg.arg1));
                     mtvTargetPatchVersion.setText(String.valueOf(msg.arg2));
@@ -835,6 +842,7 @@ public class WristbandOtaActivity extends SwipeBackActivity implements LoaderMan
             if(D) Log.d(TAG, "onError, error: " + error);
             SendMessage(MSG_ERROR, null, error, -1);
         }
+        //读取手环的版本号
         @Override
         public void onVersionRead(int appVersion, int patchVersion) {
             if (D) Log.d(TAG, "onVersionRead");

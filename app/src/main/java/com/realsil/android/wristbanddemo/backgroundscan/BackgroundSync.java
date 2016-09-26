@@ -33,8 +33,8 @@ public class BackgroundSync {
         startSyncTimer();
     }
 
-    // Rx super timer
-    private final int SYNC_PERIOD = 30 * 60000;
+    // Rx super timer 30 * 60000
+    private final int SYNC_PERIOD = 1000*10;
     final Handler mSyncHandler = new Handler();
     Runnable mSyncSuperTask = new Runnable(){
         @Override
@@ -71,6 +71,7 @@ public class BackgroundSync {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
+                    Log.d(TAG,"TAGBackgroundSync");
                     wristbandManager.SendDataRequest();
                 }
             }).start();

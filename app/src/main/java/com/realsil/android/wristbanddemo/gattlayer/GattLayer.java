@@ -96,6 +96,11 @@ public class GattLayer {
      */
 	public boolean sendData(byte[] data) {
 		if(D) Log.d(TAG, "sendData, data: " + Arrays.toString(data));
+//		if(D) Log.d("requestLoginBond",Arrays.toString(data));
+//		if(D) Log.d("requestBondLogin","Characteristic sendData"+Arrays.toString(data));
+//		if(D) Log.d("SendRemoveBondCommand","Characteristic sendData"+Arrays.toString(data));
+//		if(D) Log.d("SetDataSync()","sendData, data: " + Arrays.toString(data));
+//		if(D) Log.d("SportDataCmdRequestData","sendData, data: " + Arrays.toString(data));
 		if(mWriteCharacteristic == null) {
 			if(D) Log.e(TAG, "sendData error, with mWriteCharacteristic == null.");
 			return false;
@@ -152,13 +157,14 @@ public class GattLayer {
 		@Override
 		public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
 			if (status == BluetoothGatt.GATT_SUCCESS) {
-				if (newState == BluetoothProfile.STATE_CONNECTED) {
+				// 发现Gatt服务
+				if (newState == BluetoothProfile.STATE_CONNECTED) {//当蓝牙设备已经连接
 					mBluetoothGatt = gatt;
 					if(D) Log.i(TAG, "Connected to GATT server.");
 					// Attempts to discover services after successful connection.
 					if(D) Log.i(TAG, "Attempting to start service discovery:" +
 							mBluetoothGatt.discoverServices());
-				} else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
+				} else if (newState == BluetoothProfile.STATE_DISCONNECTED) {//当蓝牙设备无法连接
 					if(D) Log.i(TAG, "Disconnected from GATT server.");
 					// try to close gatt
 					close();

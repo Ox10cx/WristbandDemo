@@ -148,7 +148,7 @@ public class TransportLayer {
 			if(D) Log.d(TAG, "receive Data with result: " + result + ", state: " + mState);
 			
 			switch(result) {
-			case TransportLayerPacket.LT_ERROR_ACK:
+			case TransportLayerPacket.LT_ERROR_ACK:  //Receive a Error ACK package
 				if(D) Log.e(TAG, "Receive a Error ACK in wait ack state");
 				// update state
 				mState = STATE_TX;
@@ -156,7 +156,7 @@ public class TransportLayer {
 				// retransmit the packet
 				retransDataPacket();
 				break;
-			case TransportLayerPacket.LT_SUCCESS_ACK:
+			case TransportLayerPacket.LT_SUCCESS_ACK: //Receive a Success ACK package
 				// update tx sequence id
 				mCurrentTxSequenceId ++;
 				if(D) Log.e(TAG, "Receive a Success ACK in wait ack state, sequence id: " + mCurrentTxSequenceId);
@@ -249,6 +249,7 @@ public class TransportLayer {
 	 * */
 	public boolean sendData(byte[] data){
 		if(D) Log.d(TAG, "send Data with state: " + mState);
+//		if(D) Log.d("SetDataSync()","send Data with state: "+mState);
 		if(mState == STATE_NORMAL) {
 			// update state
 			mState = STATE_TX;
@@ -309,6 +310,10 @@ public class TransportLayer {
 	 * 
 	 * */
 	private void decodeReceiveData(byte[] data) {
+//		if(D) Log.d("requestLoginBond", "decodeReceiveData" +Arrays.toString(data));
+//		if(D) Log.d("requestBondLogin", "decodeReceiveData" +Arrays.toString(data));
+		if(D) Log.d("requestSports", "onSportsDataReceive, decodeReceiveData" +Arrays.toString(data));
+
 		int result;
 		if(mState == STATE_NORMAL) {
 			// change the state
@@ -476,8 +481,14 @@ public class TransportLayer {
 		// send data to the remote device
 		mUnpackThread = new ThreadUnpackSend(mLastSendPacket);
 		mUnpackThread.start();
-		
-        if(D) Log.d(TAG, "send data ok");
+
+//		if(D) Log.d("requestLoginBond", "send data ok");
+//		if(D) Log.d("requestBondLogin","send data ok");
+//		if(D) Log.d("SendRemoveBondCommand","send data ok");
+//		if(D) Log.d("SetDataSync()","send data ok");
+//		if(D) Log.d("SportDataCmdRequestData","send data ok");
+
+		if(D) Log.d(TAG, "send data ok");
     }
 	
 	/**
@@ -542,7 +553,14 @@ public class TransportLayer {
     		            length = length - MTU_PAYLOAD_SIZE_LIMIT;
     				}
     				// send the data, here we do nothing while the data send error, we just think this operation will be done
-    				if(!sendGattLayerData(realSendData)) {
+					Log.d(TAG,"appPacketData"+Arrays.toString(realSendData));
+//					if(D) Log.d("requestLoginBond",Arrays.toString(realSendData));
+//					if(D) Log.d("requestBondLogin","realSendData"+Arrays.toString(realSendData));
+//					if(D) Log.d("SendRemoveBondCommand","realSendData"+Arrays.toString(realSendData));
+//					if(D) Log.d("SetDataSync()","realSendData"+Arrays.toString(realSendData));
+//					if(D) Log.d("SportDataCmdRequestData","realSendData"+Arrays.toString(realSendData));
+
+					if(!sendGattLayerData(realSendData)) {
 						if(D) Log.e(TAG, "Send data error, may link is loss or gatt initial failed.");
 						// update state
 						mState = STATE_NORMAL;
